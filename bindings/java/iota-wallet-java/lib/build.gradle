@@ -67,14 +67,14 @@ publishing {
         mavenJava   (MavenPublication) {
 
             groupId = 'io.github.samuel-rufi'
-            artifactId = 'iota-wallet-java'
+            artifactId = 'my-test'
             version = '1.0.0-rc.1'
 
             from components.java
 
             pom {
-                name = 'iota-wallet-java'
-                description = 'Java binding to the wallet.rs library.'
+                name = 'my-test'
+                description = 'Java library.'
                 url = 'https://github.com/samuel-rufi/wallet.rs'
                 inceptionYear = '2022'
 
@@ -99,17 +99,6 @@ publishing {
                     url = 'https://github.com/samuel-rufi/wallet.rs'
                 }
 
-            }
-        }
-    }
-
-    repositories {
-        maven {
-            name = "OSSRH"
-            url = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
-            credentials {
-                username = project.properties["ossrhUsername"]
-                password = project.properties["ossrhPassword"]
             }
         }
     }
